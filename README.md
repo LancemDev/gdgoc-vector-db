@@ -24,8 +24,8 @@ The document contains a simple story about 3 children competing in a bowling com
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/LancemDev/gdgoc-vector-db.git
+cd gdgoc-vector-db
 ```
 
 2. Create and activate a virtual environment:
