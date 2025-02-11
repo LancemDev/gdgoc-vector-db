@@ -160,10 +160,3 @@ def generate_answer(query):
         logger.error(f"Error generating answer: {str(e)}")
         raise
 
-# ======= TEST THE SYSTEM =======
-logger.info("=== Starting RAG QA System ===")
-query = "Who won the competition?"
-logger.info(f"Test query: {query}")
-answer = generate_answer(query)
-print(f"\nQuestion: {query}\nAnswer: {answer}")
-logger.info("=== Finished RAG QA System ===")   
