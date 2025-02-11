@@ -18,7 +18,6 @@ The document contains a simple story about 3 children competing in a bowling com
 - Python 3.10+
 - OpenAI API key
 - Pinecone API key
-- AWS account (for Pinecone serverless)
 
 ## Installation
 
