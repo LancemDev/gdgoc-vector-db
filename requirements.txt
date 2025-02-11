@@ -1,0 +1,4 @@
+openai
+pinecone-client
+PyPDF2
+python-dotenv

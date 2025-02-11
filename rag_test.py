@@ -86,7 +86,7 @@ def generate_answer(query):
 # ======= MAIN FUNCTION =======
 if __name__ == "__main__":
     logger.info("=== Starting RAG QA Query System ===")
-    query = "Who won the competition?"
+    query = "What game was played?"
     logger.info(f"Query: {query}")
     answer = generate_answer(query)
     print(f"\nQuestion: {query}\nAnswer: {answer}")
