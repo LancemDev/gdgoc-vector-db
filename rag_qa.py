@@ -92,17 +92,11 @@ story_chunks = split_text(story_text)
 # ======= EMBED AND STORE CHUNKS =======
 def get_embedding(text):
     """Generates an embedding using OpenAI's Ada model"""
-    logger.info(f"Getting embedding for text of length: {len(text)}")
-    try:
-        response = client.embeddings.create(
-            model="text-embedding-ada-002",
-            input=[text]
-        )
-        logger.info("Successfully generated embedding")
-        return response.data[0].embedding
-    except Exception as e:
-        logger.error(f"Error generating embedding: {str(e)}")
-        raise
+    response = client.embeddings.create(
+        model="text-embedding-ada-002",
+        input=text
+    )
+    return response.data[0].embedding
 
 def store_in_pinecone():
     """Embeds and uploads story chunks to Pinecone"""
